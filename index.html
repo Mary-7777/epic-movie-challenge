@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Tourist 🎥</title>
+
+    <style>
+        body {
+            background: rgb(66, 38, 5);
+            margin: 10px auto;
+            width: 50%;
+            background-image: linear-gradient(50%);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(227, 126, 18);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 230%;
+            font-weight: bolder;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(227, 126, 18);
+            line-height: 1.5;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 900;
+
+            border: 1px solid rgb(240, 214, 186);
+            border-radius: 4px;
+            padding: 20px;
+            border-color: rgb(240, 214, 186);
+        }
+
+        img {
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+            margin: 20px 0px 20px 0px;
+            text-align: center;
+            color: rgb(240, 214, 186);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: rgb(227, 126, 18);
+            color: rgb(245, 235, 223);
+            font-size: 22px;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            box-shadow: 5px 5px 10px rgba(0 0 0 0.3);
+            transition: all 200ms ease-in-out;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            color: rgb(240, 214, 186);
+            background-color: rgb(227, 126, 18);
+            height: 1px;
+        }
+
+        .conteiner {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+
+        .about-roses {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: rgb(227, 126, 18);
+            font-size: 12;
+            text-align: center;
+        }
+
+        .about-roses:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .footer {
+            color: rgb(227, 126, 18);
+            font-size: 80;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            The Tourist
+        </h1>
+
+        <h2>
+            "Elise, you have no reason to trust me anymore, but give me a chance to explain myself. I know the police
+            are watching you. We have to throw them off the trail. Board the eight-twenty-two, the Gare de Lyon, pick
+            someone my height and build and make them believe it is me. Burn this letter. It is important you follow my
+            instructions precisely. I love you, Alexander."
+        </h2>
+
+        <br />
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/193/original/5.jpeg?1686494737"
+            width="400px" alt="roses" />
+
+        <br />
+
+        <hr />
+
+        <p>
+            “My mother wanted to teach me that people have two sides. A good side, a bad side, a past, a future. And
+            that we must embrace both in someone we love.”
+            </br>
+            <em>ANGELINA JOLIE - Elise Clifton-Ward</em>
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/The_Tourist_(2010_film)" target="_blank" class="about-roses">
+            <strong> About The Tourist Movie</strong>
+        </a>
+
+        <button class="visit-button">
+            Wish to Discuss?
+        </button>
+
+
+        <p class="footer">
+            This page was built by
+
+            <a href="https://www.linkedin.com/in/maryna-mitroshyna-77a65021/" target="_blank">
+                Maryna Mitroshyna
+            </a>
+        </p>
+
+        <script>
+            document.querySelector(".visit-button").addEventListener("click", function () {
+                let name = prompt("What is your name?");
+                if (name.length) {
+                    alert("Thanks," + " " + name + ", " + "we will be in touch.")
+                } else {
+                    alert("No name, no conversation. 😔")
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>
